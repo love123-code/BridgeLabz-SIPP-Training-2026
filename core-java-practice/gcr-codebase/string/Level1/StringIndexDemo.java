@@ -1,18 +1,16 @@
 import java.util.Scanner;
 
-public class IllegalArgumentDemo {
+public class StringIndexDemo {
 
     static void generateException(String str) {
-        System.out.println(str.substring(5, 2));
+        System.out.println(str.charAt(str.length()));
     }
 
     static void handleException(String str) {
         try {
-            System.out.println(str.substring(5, 2));
-        } catch (IllegalArgumentException e) {
-            System.out.println("IllegalArgumentException Handled");
-        } catch (RuntimeException e) {
-            System.out.println("RuntimeException Handled");
+            System.out.println(str.charAt(str.length()));
+        } catch (StringIndexOutOfBoundsException e) {
+            System.out.println("StringIndexOutOfBoundsException Handled");
         }
     }
 
