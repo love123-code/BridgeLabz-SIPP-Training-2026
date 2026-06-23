@@ -4,9 +4,9 @@ public class Quiz {
 
         String answers[] = {"A", "B", "C", "D"};
 
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i <= 10; i++) {
             try {
-                if (answers[i].equals("A")) {
+                if (answers[i].equals("D")) {
                     System.out.println("Correct at index " + i);
                 }
             } catch (ArrayIndexOutOfBoundsException e) {
