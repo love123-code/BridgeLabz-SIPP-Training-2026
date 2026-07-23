@@ -1,4 +1,4 @@
--- Problem 21: Create View for Latest COVID Data
+ --Create View for Latest COVID Data
 
 CREATE VIEW latest_covid_data AS
 SELECT
@@ -15,7 +15,7 @@ WHERE cc.date = (
 );
 
 
--- Problem 22: Build Mortality Rate Function
+-- Build Mortality Rate Function
 
 DELIMITER //
 
@@ -40,7 +40,7 @@ END //
 DELIMITER ;
 
 
--- Problem 23: Create Stored Procedure for Data Updates
+--  Create Stored Procedure for Data Updates
 
 DELIMITER //
 
@@ -63,7 +63,7 @@ END //
 DELIMITER ;
 
 
--- Problem 24: Implement Recovery Rate Function
+--  Implement Recovery Rate Function
 
 DELIMITER //
 
@@ -88,7 +88,7 @@ END //
 DELIMITER ;
 
 
--- Problem 25: Create Audit Trigger for Data Changes
+--  Create Audit Trigger for Data Changes
 
 CREATE TABLE covid_cases_audit (
     audit_id INT AUTO_INCREMENT PRIMARY KEY,
